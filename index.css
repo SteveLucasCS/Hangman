@@ -70,6 +70,10 @@ h2 {
   font-size: 1.2rem;
 }
 
+footer img {
+  display: none;
+}
+
 @media only screen and (max-width: 990px) {
   h1 {
     font-size: 1.2em;
