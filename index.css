@@ -26,6 +26,7 @@ body {
 .row {
   padding: 2rem 0.5rem;
   justify-content: space-around;
+  margin: 0;
 }
 
 .col-md-5 {
@@ -57,7 +58,7 @@ header img {
 }
 
 h1 {
-  color: white;
+  color: #ffffff;
   margin: auto;
   text-align: center;
   font-weight: normal;
@@ -65,6 +66,38 @@ h1 {
   display: inline-block;
 }
 h2 {
-  color: white;
+  color: #ffffff;
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 990px) {
+  h1 {
+    font-size: 1.2em;
+  }
+  #game-container {
+    font-size: 1.2em;
+    background-image: none;
+    width: 100%;
+    background-color: #E60B2B;
+  }
+  #game-container,
+  h2 {
+    color: #000000;
+  }
+
+  header img {
+    display: none;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0.1em 1em;
+  }
+  footer img {
+    display: block;
+    height: 100%;
+    width: auto;
+  }
 }
